@@ -55,44 +55,46 @@ def enemy():
         damage = randint(5, 10)
         print "He swings his club at you."
         print "That causes "+str(damage)+" hearts of damage to you"
-        HP-damage
+        global HP
+        HP = HP-damage
         print "You have "+str(HP)+" HP left."
 def buy():
         print "["+str(namechoice[0])+": ] We have Health drinks, Arrows, Bows, Swords, Meat and a Helmet"
+        global money
         buy = raw_input("What do you want?  ")
         if buy == "Health drinks":
                 print "["+str(namechoice[0])+": ] You used $50 on it"
-                money-50
+                money = money-50
                 print "you have $"+str(money)+" left"
                 print "Thanks!"
                 goon1()
         elif buy == "Arrows":
                 print "["+str(namechoice[0])+": ] You used $35 on it"
-                money-35
+                money = money-35
                 print "you have $"+str(money)+" left"
                 print "Thanks!"
                 goon1()
         elif buy == "Bows":
                 print "["+str(namechoice[0])+": ] You used $10 on it"
-                money-10
+                money = money-10
                 print "you have $"+str(money)+" left"
                 print "Thanks!"
                 goon1()
         elif buy == "Swords":
                 print "["+str(namechoice[0])+": ] You used $100 on it"
-                money-100
+                money = money-100
                 print "you have $"+str(money)+" left"
                 print "Thanks!"
                 goon1()
         elif buy == "Meat":
                 print "["+str(namechoice[0])+": ] You used $5 on it"
-                money-5
+                money = money-5
                 print "you have $"+str(money)+" left"
                 print "Thanks!"
                 goon1()
         elif buy == "Helmets":
                 print "["+str(namechoice[0])+": ] You used $250 on it"
-                money-250
+                money = money-250
                 print "you have $"+str(money)+" left"
                 print "Thanks!"
                 goon1()
